@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>معرض الأعمال - إبداع | للإعلان والتصاميم والطباعة</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+   
+</head>
+<body class="bg-gray-50">
+    <!-- شريط التنقل -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50 slide-in">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <!-- الشعار -->
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center">
+                        <div class="w-12 h-12 bg-gradient-to-r from-blue-500 to-blue-600 rounded-xl flex items-center justify-center text-white font-bold text-xl shadow-lg pulse-glow">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <span class="text-2xl font-bold text-gray-800 mr-3">إبداع</span>
+                    </a>
+                </div>
+                
+                <!-- روابط التنقل -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="nav-link text-gray-600 hover:text-blue-600 transition duration-300">الرئيسية</a>
+                    <a href="about.html" class="nav-link text-gray-600 hover:text-blue-600 transition duration-300">من نحن</a>
+                    <a href="services.html" class="nav-link text-gray-600 hover:text-blue-600 transition duration-300">خدماتنا</a>
+                    <a href="portfolio.html" class="nav-link text-blue-600 font-semibold">معرض الأعمال</a>
+                    <a href="shop.html" class="nav-link text-gray-600 hover:text-blue-600 transition duration-300">المتجر</a>
+                    <a href="blog.html" class="nav-link text-gray-600 hover:text-blue-600 transition duration-300">المدونة</a>
+                    <a href="contact.html" class="nav-link text-gray-600 hover:text-blue-600 transition duration-300">اتصل بنا</a>
+                </div>
+                
+                <!-- أزرار إضافية -->
+                <div class="flex items-center space-x-4 space-x-reverse">
+                    <button class="bg-blue-500 text-white hover:bg-blue-600 px-5 py-2 rounded-lg font-semibold transition duration-300 shadow-md hover:shadow-lg">
+                        طلب تصميم <i class="fas fa-arrow-left mr-2"></i>
+                    </button>
+                    
+                    <!-- زر القائمة المتنقلة -->
+                    <button class="md:hidden text-gray-600 focus:outline-none mobile-menu-button">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- القائمة المتنقلة -->
+        <div class="hidden mobile-menu md:hidden bg-white py-4 border-t">
+            <div class="flex flex-col space-y-4 px-4">
+                <a href="index.html" class="text-gray-600 hover:text-blue-600 py-2 border-b border-gray-100 transition duration-300">الرئيسية</a>
+                <a href="about.html" class="text-gray-600 hover:text-blue-600 py-2 border-b border-gray-100 transition duration-300">من نحن</a>
+                <a href="services.html" class="text-gray-600 hover:text-blue-600 py-2 border-b border-gray-100 transition duration-300">خدماتنا</a>
+                <a href="portfolio.html" class="text-blue-600 font-semibold py-2 border-b border-gray-100">معرض الأعمال</a>
+                <a href="shop.html" class="text-gray-600 hover:text-blue-600 py-2 border-b border-gray-100 transition duration-300">المتجر</a>
+                <a href="blog.html" class="text-gray-600 hover:text-blue-600 py-2 border-b border-gray-100 transition duration-300">المدونة</a>
+                <a href="contact.html" class="text-gray-600 hover:text-blue-600 py-2 transition duration-300">اتصل بنا</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- قسم الهيرو -->
+    <section class="hero-gradient text-white py-20 md:py-28">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">معرض الأعمال</h1>
+            <p class="text-xl max-w-3xl mx-auto text-blue-100">استعرض مجموعة من أبرز مشاريعنا الإبداعية في مجالات الدعاية والإعلان والتصميم والطباعة</p>
+        </div>
+    </section>
+
+    <!-- قسم التصنيفات -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap justify-center gap-4">
+                <button class="portfolio-filter active bg-blue-600 text-white px-6 py-2 rounded-full font-semibold transition duration-300" data-filter="all">الكل</button>
+                <button class="portfolio-filter bg-gray-200 text-gray-800 hover:bg-blue-600 hover:text-white px-6 py-2 rounded-full font-semibold transition duration-300" data-filter="branding">الهوية البصرية</button>
+                <button class="portfolio-filter bg-gray-200 text-gray-800 hover:bg-blue-600 hover:text-white px-6 py-2 rounded-full font-semibold transition duration-300" data-filter="graphic">التصميم الجرافيكي</button>
+                <button class="portfolio-filter bg-gray-200 text-gray-800 hover:bg-blue-600 hover:text-white px-6 py-2 rounded-full font-semibold transition duration-300" data-filter="printing">الطباعة والتغليف</button>
+                <button class="portfolio-filter bg-gray-200 text-gray-800 hover:bg-blue-600 hover:text-white px-6 py-2 rounded-full font-semibold transition duration-300" data-filter="social">وسائل التواصل الاجتماعي</button>
+                <button class="portfolio-filter bg-gray-200 text-gray-800 hover:bg-blue-600 hover:text-white px-6 py-2 rounded-full font-semibold transition duration-300" data-filter="web">المواقع والتطبيقات</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم معرض الأعمال -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- مشروع 1 -->
+                <div class="portfolio-item bg-white rounded-2xl shadow-lg overflow-hidden hover-lift" data-category="branding">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="هوية بصرية لمطعم" class="w-full h-64 object-cover">
+                        <div class="portfolio-overlay">
+                            <div class="text-white text-center p-4">
+                                <h3 class="text-xl font-bold mb-2">هوية بصرية لمطعم</h3>
+                                <p class="mb-4">تصميم هوية بصرية متكاملة لمطعم راقٍ</p>
+                                <button class="view-project bg-white text-blue-600 px-4 py-2 rounded-lg font-semibold transition duration-300 hover:bg-gray-100">
+                                    عرض التفاصيل
+                                </button>
+                            </div>
+                        </div>
+                        <div class="portfolio-category">الهوية البصرية</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">هوية بصرية - مطعم "نكهات"</h3>
+                        <p class="text-gray-600 mb-4">تصميم هوية بصرية متكاملة تشمل الشعار والألوان والمواد الدعائية</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm">الهوية البصرية</span>
+                            <span class="bg-green-100 text-green-600 px-3 py-1 rounded-full text-sm">التصميم الجرافيكي</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- مشروع 2 -->
+                <div class="portfolio-item bg-white rounded-2xl shadow-lg overflow-hidden hover-lift" data-category="social">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1545235617-9465d2a55698?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1480&q=80" alt="حملة إعلانية" class="w-full h-64 object-cover">
+                        <div class="portfolio-overlay">
+                            <div class="text-white text-center p-4">
+                                <h3 class="text-xl font-bold mb-2">حملة إعلانية</h3>
+                                <p class="mb-4">حملة إعلانية متكاملة لعلامة تجارية جديدة</p>
+                                <button class="view-project bg-white text-blue-600 px-4 py-2 rounded-lg font-semibold transition duration-300 hover:bg-gray-100">
+                                    عرض التفاصيل
+                                </button>
+                            </div>
+                        </div>
+                        <div class="portfolio-category">وسائل التواصل</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">حملة إعلانية - "تكنو"</h3>
+                        <p class="text-gray-600 mb-4">حملة إعلانية متكاملة عبر منصات التواصل الاجتماعي والإعلانات الخارجية</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm">الدعاية والإعلان</span>
+                            <span class="bg-purple-100 text-purple-600 px-3 py-1 rounded-full text-sm">وسائل التواصل</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- مشروع 3 -->
+                <div class="portfolio-item bg-white rounded-2xl shadow-lg overflow-hidden hover-lift" data-category="printing">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="مواد مطبوعة" class="w-full h-64 object-cover">
+                        <div class="portfolio-overlay">
+                            <div class="text-white text-center p-4">
+                                <h3 class="text-xl font-bold mb-2">مواد مطبوعة</h3>
+                                <p class="mb-4">تصميم وطباعة مواد ترويجية لمؤسسة تعليمية</p>
+                                <button class="view-project bg-white text-blue-600 px-4 py-2 rounded-lg font-semibold transition duration-300 hover:bg-gray-100">
+                                    عرض التفاصيل
+                                </button>
+                            </div>
+                        </div>
+                        <div class="portfolio-category">الطباعة</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">مواد ترويجية - أكاديمية "المستقبل"</h3>
+                        <p class="text-gray-600 mb-4">تصميم وطباعة البروشورات والكتيبات واللافتات لمؤسسة تعليمية</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm">الطباعة</span>
+                            <span class="bg-yellow-100 text-yellow-600 px-3 py-1 rounded-full text-sm">التصميم الجرافيكي</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- مشروع 4 -->
+                <div class="portfolio-item bg-white rounded-2xl shadow-lg overflow-hidden hover-lift" data-category="web">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1528&q=80" alt="تصميم موقع إلكتروني" class="w-full h-64 object-cover">
+                        <div class="portfolio-overlay">
+                            <div class="text-white text-center p-4">
+                                <h3 class="text-xl font-bold mb-2">موقع إلكتروني</h3>
+                                <p class="mb-4">تصميم وتطوير موقع إلكتروني لشركة سياحية</p>
+                                <button class="view-project bg-white text-blue-600 px-4 py-2 rounded-lg font-semibold transition duration-300 hover:bg-gray-100">
+                                    عرض التفاصيل
+                                </button>
+                            </div>
+                        </div>
+                        <div class="portfolio-category">المواقع الإلكترونية</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">موقع إلكتروني - "سفاري" للسياحة</h3>
+                        <p class="text-gray-600 mb-4">تصميم وتطوير موقع إلكتروني متكامل مع نظام حجوزات</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm">المواقع الإلكترونية</span>
+                            <span class="bg-indigo-100 text-indigo-600 px-3 py-1 rounded-full text-sm">تصميم واجهات</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- مشروع 5 -->
+                <div class="portfolio-item bg-white rounded-2xl shadow-lg overflow-hidden hover-lift" data-category="graphic">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1611605698335-8b1569810432?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="تصميم تغليف" class="w-full h-64 object-cover">
+                        <div class="portfolio-overlay">
+                            <div class="text-white text-center p-4">
+                                <h3 class="text-xl font-bold mb-2">تصميم تغليف</h3>
+                                <p class="mb-4">تصميم تغليف منتجات لعلامة تجارية</p>
+                                <button class="view-project bg-white text-blue-600 px-4 py-2 rounded-lg font-semibold transition duration-300 hover:bg-gray-100">
+                                    عرض التفاصيل
+                                </button>
+                            </div>
+                        </div>
+                        <div class="portfolio-category">التغليف</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">تصميم تغليف - "طبيعي" للمنتجات العضوية</h3>
+                        <p class="text-gray-600 mb-4">تصميم تغليف مبتكر يعكس طبيعة المنتجات العضوية والبيئية</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm">التغليف</span>
+                            <span class="bg-green-100 text-green-600 px-3 py-1 rounded-full text-sm">التصميم الجرافيكي</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- مشروع 6 -->
+                <div class="portfolio-item bg-white rounded-2xl shadow-lg overflow-hidden hover-lift" data-category="graphic">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="إنفوجرافيك" class="w-full h-64 object-cover">
+                        <div class="portfolio-overlay">
+                            <div class="text-white text-center p-4">
+                                <h3 class="text-xl font-bold mb-2">إنفوجرافيك</h3>
+                                <p class="mb-4">تصميم إنفوجرافيك لشركة تقنية</p>
+                                <button class="view-project bg-white text-blue-600 px-4 py-2 rounded-lg font-semibold transition duration-300 hover:bg-gray-100">
+                                    عرض التفاصيل
+                                </button>
+                            </div>
+                        </div>
+                        <div class="portfolio-category">الإنفوجرافيك</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">إنفوجرافيك - "تكنو" للتقنية</h3>
+                        <p class="text-gray-600 mb-4">تصميم إنفوجرافيك لعرض إحصائيات وأداء الشركة</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm">الإنفوجرافيك</span>
+                            <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm">التصميم الجرافيكي</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <button class="bg-blue-600 text-white hover:bg-blue-700 px-8 py-3 rounded-xl font-bold transition duration-300 shadow-lg hover:shadow-xl inline-flex items-center">
+                    عرض المزيد من الأعمال <i class="fas fa-arrow-left mr-2"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الإحصائيات -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div class="stagger-item" style="animation-delay: 0.1s;">
+                    <div class="text-4xl md:text-5xl font-bold text-blue-600 mb-2">500+</div>
+                    <p class="text-gray-600">مشروع مكتمل</p>
+                </div>
+                
+                <div class="stagger-item" style="animation-delay: 0.2s;">
+                    <div class="text-4xl md:text-5xl font-bold text-blue-600 mb-2">150+</div>
+                    <p class="text-gray-600">عميل راضٍ</p>
+                </div>
+                
+                <div class="stagger-item" style="animation-delay: 0.3s;">
+                    <div class="text-4xl md:text-5xl font-bold text-blue-600 mb-2">98%</div>
+                    <p class="text-gray-600">نسبة رضا العملاء</p>
+                </div>
+                
+                <div class="stagger-item" style="animation-delay: 0.4s;">
+                    <div class="text-4xl md:text-5xl font-bold text-blue-600 mb-2">8</div>
+                    <p class="text-gray-600">سنوات من الخبرة</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم آراء العملاء -->
+    <section class="py-20 bg-gradient-to-br from-blue-50 to-indigo-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">آراء <span class="text-blue-600">العملاء</span></h2>
+                <p class="text-gray-600 max-w-2xl mx-auto text-lg">ماذا يقول عملاؤنا عن تجربتهم مع إبداع</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- رأي 1 -->
+                <div class="bg-white rounded-2xl p-6 shadow-lg hover-lift stagger-item" style="animation-delay: 0.1s;">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center font-bold text-xl mr-4">أ</div>
+                        <div>
+                            <h3 class="font-bold text-gray-800">أحمد السعد</h3>
+                            <p class="text-gray-500 text-sm">مدير تسويق - شركة تكنو</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">"تعاملت مع إبداع في تصميم هويتنا البصرية وكانت النتيجة مذهلة. فريق محترف ومبدع حقًا."</p>
+                    <div class="flex text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <!-- رأي 2 -->
+                <div class="bg-white rounded-2xl p-6 shadow-lg hover-lift stagger-item" style="animation-delay: 0.2s;">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-green-100 text-green-600 rounded-full flex items-center justify-center font-bold text-xl mr-4">س</div>
+                        <div>
+                            <h3 class="font-bold text-gray-800">سارة محمد</h3>
+                            <p class="text-gray-500 text-sm">مالكة مطعم نكهات</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">"الحملة الإعلانية التي صممها فريق إبداع ساهمت في زيادة مبيعاتنا بنسبة 40%. شكرًا لكم!"</p>
+                    <div class="flex text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <!-- رأي 3 -->
+                <div class="bg-white rounded-2xl p-6 shadow-lg hover-lift stagger-item" style="animation-delay: 0.3s;">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-purple-100 text-purple-600 rounded-full flex items-center justify-center font-bold text-xl mr-4">خ</div>
+                        <div>
+                            <h3 class="font-bold text-gray-800">خالد العتيبي</h3>
+                            <p class="text-gray-500 text-sm">مدير أكاديمية المستقبل</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">"جودة الطباعة والتصميم كانت استثنائية. أنصح بالتعامل مع إبداع لأي مشروع إبداعي."</p>
+                    <div class="flex text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم اتصل بنا -->
+    <section class="py-20 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-6">هل لديك مشروع إبداعي؟</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto text-blue-100">لنتحدث عن كيفية تحويل فكرتك إلى واقع ملموس</p>
+            <a href="contact.html" class="bg-white text-blue-600 hover:bg-gray-100 px-8 py-4 rounded-xl font-bold text-lg transition duration-300 shadow-lg hover:shadow-xl inline-flex items-center">
+                اتصل بنا الآن <i class="fas fa-arrow-left mr-2"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center text-white font-bold text-xl">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <span class="text-2xl font-bold mr-2">إبداع</span>
+                    </div>
+                    <p class="text-gray-400">شريكك الإبداعي في عالم الدعاية والإعلان والتصاميم والطباعة والجرافيك</p>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">روابط سريعة</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition duration-300">الرئيسية</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition duration-300">من نحن</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition duration-300">خدماتنا</a></li>
+                        <li><a href="portfolio.html" class="text-gray-400 hover:text-white transition duration-300">معرض الأعمال</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">خدماتنا</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">الدعاية والإعلان</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">التصاميم الإبداعية</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">الطباعة الاحترافية</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">الحلول الجرافيكية</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">تابعنا</h3>
+                    <div class="flex space-x-4 space-x-reverse">
+                        <a href="#" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-blue-600 transition duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-blue-600 transition duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-blue-600 transition duration-300">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-blue-600 transition duration-300">
+                            <i class="fab fa-behance"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>جميع الحقوق محفوظة &copy; إبداع 2023</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

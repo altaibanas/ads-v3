@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اتصل بنا - إبداع | للإعلان والتصاميم والطباعة</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gray-50">
+    <!-- شريط التنقل -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50 slide-in">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <!-- الشعار -->
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center">
+                        <div class="w-12 h-12 bg-gradient-to-r from-blue-500 to-blue-600 rounded-xl flex items-center justify-center text-white font-bold text-xl shadow-lg pulse-glow">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <span class="text-2xl font-bold text-gray-800 mr-3">إبداع</span>
+                    </a>
+                </div>
+                
+                <!-- روابط التنقل -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="nav-link text-gray-600 hover:text-blue-600 transition duration-300">الرئيسية</a>
+                    <a href="about.html" class="nav-link text-gray-600 hover:text-blue-600 transition duration-300">من نحن</a>
+                    <a href="services.html" class="nav-link text-gray-600 hover:text-blue-600 transition duration-300">خدماتنا</a>
+                    <a href="portfolio.html" class="nav-link text-gray-600 hover:text-blue-600 transition duration-300">معرض الأعمال</a>
+                    <a href="shop.html" class="nav-link text-gray-600 hover:text-blue-600 transition duration-300">المتجر</a>
+                    <a href="blog.html" class="nav-link text-gray-600 hover:text-blue-600 transition duration-300">المدونة</a>
+                    <a href="contact.html" class="nav-link text-blue-600 font-semibold">اتصل بنا</a>
+                </div>
+                
+                <!-- أزرار إضافية -->
+                <div class="flex items-center space-x-4 space-x-reverse">
+                    <button class="bg-blue-500 text-white hover:bg-blue-600 px-5 py-2 rounded-lg font-semibold transition duration-300 shadow-md hover:shadow-lg">
+                        طلب تصميم <i class="fas fa-arrow-left mr-2"></i>
+                    </button>
+                    
+                    <!-- زر القائمة المتنقلة -->
+                    <button class="md:hidden text-gray-600 focus:outline-none mobile-menu-button">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- القائمة المتنقلة -->
+        <div class="hidden mobile-menu md:hidden bg-white py-4 border-t">
+            <div class="flex flex-col space-y-4 px-4">
+                <a href="index.html" class="text-gray-600 hover:text-blue-600 py-2 border-b border-gray-100 transition duration-300">الرئيسية</a>
+                <a href="about.html" class="text-gray-600 hover:text-blue-600 py-2 border-b border-gray-100 transition duration-300">من نحن</a>
+                <a href="services.html" class="text-gray-600 hover:text-blue-600 py-2 border-b border-gray-100 transition duration-300">خدماتنا</a>
+                <a href="portfolio.html" class="text-gray-600 hover:text-blue-600 py-2 border-b border-gray-100 transition duration-300">معرض الأعمال</a>
+                <a href="shop.html" class="text-gray-600 hover:text-blue-600 py-2 border-b border-gray-100 transition duration-300">المتجر</a>
+                <a href="blog.html" class="text-gray-600 hover:text-blue-600 py-2 border-b border-gray-100 transition duration-300">المدونة</a>
+                <a href="contact.html" class="text-blue-600 font-semibold py-2 transition duration-300">اتصل بنا</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- قسم الهيرو -->
+    <section class="hero-gradient text-white py-20 md:py-28">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">اتصل بنا</h1>
+            <p class="text-xl max-w-3xl mx-auto text-blue-100">نحن هنا للإجابة على استفساراتك ومساعدتك في تحقيق أفكارك الإبداعية</p>
+        </div>
+    </section>
+
+    <!-- قسم معلومات الاتصال -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 rounded-2xl p-8 text-center hover-lift stagger-item" style="animation-delay: 0.1s;">
+                    <div class="w-20 h-20 bg-blue-600 rounded-full flex items-center justify-center text-white text-2xl mx-auto mb-6">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">عنواننا</h3>
+                    <p class="text-gray-600">المملكة العربية السعودية، الرياض<br>حي العليا، شارع الملك فهد</p>
+                </div>
+                
+                <div class="bg-gray-50 rounded-2xl p-8 text-center hover-lift stagger-item" style="animation-delay: 0.2s;">
+                    <div class="w-20 h-20 bg-green-600 rounded-full flex items-center justify-center text-white text-2xl mx-auto mb-6">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">اتصل بنا</h3>
+                    <p class="text-gray-600">+966 123 456 789<br>+966 987 654 321</p>
+                </div>
+                
+                <div class="bg-gray-50 rounded-2xl p-8 text-center hover-lift stagger-item" style="animation-delay: 0.3s;">
+                    <div class="w-20 h-20 bg-purple-600 rounded-full flex items-center justify-center text-white text-2xl mx-auto mb-6">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">البريد الإلكتروني</h3>
+                    <p class="text-gray-600">info@ibdaa.com<br>support@ibdaa.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم نموذج الاتصال -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                    <div class="md:flex">
+                        <div class="md:w-1/2 bg-gradient-to-r from-blue-500 to-blue-600 text-white p-8">
+                            <h2 class="text-3xl font-bold mb-6">لنتحدث عن مشروعك</h2>
+                            <p class="mb-6 text-blue-100">نحن متحمسون لسماع أفكارك ومستعدون لمساعدتك في تحويلها إلى واقع ملموس. اتصل بنا اليوم واحصل على استشارة مجانية.</p>
+                            <div class="space-y-4">
+                                <div class="flex items-center">
+                                    <i class="fas fa-clock ml-4"></i>
+                                    <div>
+                                        <h4 class="font-bold">أوقات العمل</h4>
+                                        <p>الأحد - الخميس: 8 ص - 6 م</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center">
+                                    <i class="fas fa-comments ml-4"></i>
+                                    <div>
+                                        <h4 class="font-bold">الدردشة المباشرة</h4>
+                                        <p>متاحة خلال أوقات العمل</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center">
+                                    <i class="fas fa-reply ml-4"></i>
+                                    <div>
+                                        <h4 class="font-bold">وقت الرد</h4>
+                                        <p>خلال 24 ساعة كحد أقصى</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="md:w-1/2 p-8">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-6">أرسل لنا رسالة</h3>
+                            <form id="contactForm">
+                                <div class="mb-4">
+                                    <label class="block text-gray-700 mb-2" for="name">الاسم الكامل</label>
+                                    <input type="text" id="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-300" required>
+                                </div>
+                                <div class="mb-4">
+                                    <label class="block text-gray-700 mb-2" for="email">البريد الإلكتروني</label>
+                                    <input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-300" required>
+                                </div>
+                                <div class="mb-4">
+                                    <label class="block text-gray-700 mb-2" for="phone">رقم الهاتف</label>
+                                    <input type="tel" id="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-300">
+                                </div>
+                                <div class="mb-4">
+                                    <label class="block text-gray-700 mb-2" for="service">نوع الخدمة</label>
+                                    <select id="service" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-300">
+                                        <option value="">اختر الخدمة</option>
+                                        <option value="design">التصاميم الإبداعية</option>
+                                        <option value="advertising">الدعاية والإعلان</option>
+                                        <option value="printing">الطباعة الاحترافية</option>
+                                        <option value="graphic">الحلول الجرافيكية</option>
+                                        <option value="other">خدمة أخرى</option>
+                                    </select>
+                                </div>
+                                <div class="mb-6">
+                                    <label class="block text-gray-700 mb-2" for="message">الرسالة</label>
+                                    <textarea id="message" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-300" required></textarea>
+                                </div>
+                                <button type="submit" class="w-full bg-blue-600 text-white hover:bg-blue-700 py-3 rounded-lg font-bold transition duration-300 shadow-md hover:shadow-lg">
+                                    أرسل الرسالة
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الخريطة -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">زورنا في <span class="text-blue-600">معرضنا</span></h2>
+                <p class="text-gray-600 max-w-2xl mx-auto text-lg">نرحب بكم في معرضنا لمشاهدة نماذج من أعمالنا والالتقاء بفريقنا الإبداعي</p>
+            </div>
+            
+            <div class="bg-gray-200 rounded-2xl h-96 flex items-center justify-center">
+                <div class="text-center">
+                    <i class="fas fa-map-marked-alt text-5xl text-gray-400 mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-600">خريطة موقعنا</h3>
+                    <p class="text-gray-500 mt-2">سيتم تضمين خريطة تفاعلية هنا</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الأسئلة الشائعة -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">أسئلة <span class="text-blue-600">شائعة</span></h2>
+                <p class="text-gray-600 max-w-2xl mx-auto text-lg">إجابات على الأسئلة الأكثر شيوعًا من عملائنا</p>
+            </div>
+            
+            <div class="max-w-3xl mx-auto">
+                <div class="bg-white rounded-2xl p-6 mb-6 hover-lift stagger-item" style="animation-delay: 0.1s;">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">كم تبلغ تكلفة تصميم هوية بصرية؟</h3>
+                    <p class="text-gray-600">تختلف تكلفة تصميم الهوية البصرية حسب متطلبات المشروع وتعقيده. نبدأ من 1500 ريال سعودي للهويات البسيطة، ويمكن أن تصل إلى 5000 ريال سعودي للهويات المتكاملة مع دليل الاستخدام.</p>
+                </div>
+                
+                <div class="bg-white rounded-2xl p-6 mb-6 hover-lift stagger-item" style="animation-delay: 0.2s;">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">ما هي مدة تنفيذ مشروع تصميم موقع إلكتروني؟</h3>
+                    <p class="text-gray-600">تعتمد مدة التنفيذ على حجم الموقع وتعقيده. بشكل عام، تستغرق المواقع البسيطة من 2 إلى 3 أسابيع، بينما قد تحتاج المواقع المتوسطة إلى 4-6 أسابيع، والمواقع المعقدة قد تستغرق 8 أسابيع أو أكثر.</p>
+                </div>
+                
+                <div class="bg-white rounded-2xl p-6 mb-6 hover-lift stagger-item" style="animation-delay: 0.3s;">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">هل تقدمون خدمات الطباعة بكميات قليلة؟</h3>
+                    <p class="text-gray-600">نعم، نقدم خدمات الطباعة لجميع الكميات، بما في ذلك الكميات القليلة. نحن ندرك احتياجات الشركات الناشئة والأفراد، ونوفر خيارات طباعة مرنة تناسب الميزانيات المختلفة.</p>
+                </div>
+                
+                <div class="bg-white rounded-2xl p-6 hover-lift stagger-item" style="animation-delay: 0.4s;">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">هل يمكنني طلب تعديلات على التصميم بعد التسليم؟</h3>
+                    <p class="text-gray-600">نعم، نقدم فترة مراجعة لمدة 14 يومًا بعد تسليم المشروع يمكنك خلالها طلب تعديلات طفيفة. للتعديلات الجوهرية، قد يتم تطبيق رسوم إضافية حسب حجم التغييرات المطلوبة.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم اتصل بنا -->
+    <section class="py-20 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-6">مستعد لبدء مشروعك الإبداعي؟</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto text-blue-100">لا تتردد في التواصل معنا، نحن هنا لمساعدتك في تحقيق رؤيتك</p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="tel:+966123456789" class="bg-white text-blue-600 hover:bg-gray-100 px-8 py-4 rounded-xl font-bold text-lg transition duration-300 shadow-lg hover:shadow-xl inline-flex items-center">
+                    <i class="fas fa-phone ml-2"></i> اتصل بنا الآن
+                </a>
+                <a href="mailto:info@ibdaa.com" class="bg-transparent border-2 border-white text-white hover:bg-white hover:text-blue-600 px-8 py-4 rounded-xl font-bold text-lg transition duration-300 inline-flex items-center">
+                    <i class="fas fa-envelope ml-2"></i> أرسل بريدًا إلكترونيًا
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center text-white font-bold text-xl">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <span class="text-2xl font-bold mr-2">إبداع</span>
+                    </div>
+                    <p class="text-gray-400">شريكك الإبداعي في عالم الدعاية والإعلان والتصاميم والطباعة والجرافيك</p>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">روابط سريعة</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition duration-300">الرئيسية</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition duration-300">من نحن</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition duration-300">خدماتنا</a></li>
+                        <li><a href="portfolio.html" class="text-gray-400 hover:text-white transition duration-300">معرض الأعمال</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">خدماتنا</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">الدعاية والإعلان</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">التصاميم الإبداعية</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">الطباعة الاحترافية</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">الحلول الجرافيكية</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">تابعنا</h3>
+                    <div class="flex space-x-4 space-x-reverse">
+                        <a href="#" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-blue-600 transition duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-blue-600 transition duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-blue-600 transition duration-300">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-blue-600 transition duration-300">
+                            <i class="fab fa-behance"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>جميع الحقوق محفوظة &copy; إبداع 2023</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js">
+      
+     
+    </script>
+</body>
+</html>

@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>من نحن - إبداع | للإعلان والتصاميم والطباعة</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gray-50">
+    <!-- شريط التنقل -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50 slide-in">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <!-- الشعار -->
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center">
+                        <div class="w-12 h-12 bg-gradient-to-r from-blue-500 to-blue-600 rounded-xl flex items-center justify-center text-white font-bold text-xl shadow-lg pulse-glow">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <span class="text-2xl font-bold text-gray-800 mr-3">إبداع</span>
+                    </a>
+                </div>
+                
+                <!-- روابط التنقل -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="nav-link text-gray-600 hover:text-blue-600 transition duration-300">الرئيسية</a>
+                    <a href="about.html" class="nav-link text-blue-600 font-semibold">من نحن</a>
+                    <a href="services.html" class="nav-link text-gray-600 hover:text-blue-600 transition duration-300">خدماتنا</a>
+                    <a href="portfolio.html" class="nav-link text-gray-600 hover:text-blue-600 transition duration-300">معرض الأعمال</a>
+                    <a href="shop.html" class="nav-link text-gray-600 hover:text-blue-600 transition duration-300">المتجر</a>
+                    <a href="blog.html" class="nav-link text-gray-600 hover:text-blue-600 transition duration-300">المدونة</a>
+                    <a href="contact.html" class="nav-link text-gray-600 hover:text-blue-600 transition duration-300">اتصل بنا</a>
+                </div>
+                
+                <!-- أزرار إضافية -->
+                <div class="flex items-center space-x-4 space-x-reverse">
+                    <button class="bg-blue-500 text-white hover:bg-blue-600 px-5 py-2 rounded-lg font-semibold transition duration-300 shadow-md hover:shadow-lg">
+                        طلب تصميم <i class="fas fa-arrow-left mr-2"></i>
+                    </button>
+                    
+                    <!-- زر القائمة المتنقلة -->
+                    <button class="md:hidden text-gray-600 focus:outline-none mobile-menu-button">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- القائمة المتنقلة -->
+        <div class="hidden mobile-menu md:hidden bg-white py-4 border-t">
+            <div class="flex flex-col space-y-4 px-4">
+                <a href="index.html" class="text-gray-600 hover:text-blue-600 py-2 border-b border-gray-100 transition duration-300">الرئيسية</a>
+                <a href="about.html" class="text-blue-600 font-semibold py-2 border-b border-gray-100">من نحن</a>
+                <a href="services.html" class="text-gray-600 hover:text-blue-600 py-2 border-b border-gray-100 transition duration-300">خدماتنا</a>
+                <a href="portfolio.html" class="text-gray-600 hover:text-blue-600 py-2 border-b border-gray-100 transition duration-300">معرض الأعمال</a>
+                <a href="shop.html" class="text-gray-600 hover:text-blue-600 py-2 border-b border-gray-100 transition duration-300">المتجر</a>
+                <a href="blog.html" class="text-gray-600 hover:text-blue-600 py-2 border-b border-gray-100 transition duration-300">المدونة</a>
+                <a href="contact.html" class="text-gray-600 hover:text-blue-600 py-2 transition duration-300">اتصل بنا</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- قسم الهيرو -->
+    <section class="hero-gradient text-white py-20 md:py-28">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">من نحن</h1>
+            <p class="text-xl max-w-3xl mx-auto text-blue-100">نحن فريق من المبدعين والمصممين المحترفين نسعى لتحويل أفكارك إلى واقع ملموس عبر حلول إبداعية مبتكرة</p>
+        </div>
+    </section>
+
+    <!-- قسم قصة إبداع -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <div class="lg:w-1/2">
+                    <h2 class="text-4xl font-bold text-gray-800 mb-6">قصتنا <span class="text-blue-600">وإبداعنا</span></h2>
+                    <p class="text-gray-600 mb-6 text-lg leading-relaxed">تأسست "إبداع" عام 2015 كمشروع صغير يهدف إلى تقديم حلول إعلانية وتصميمية متميزة. ومنذ ذلك الحين، نمت لتكون واحدة من الشركات الرائدة في مجال الدعاية والإعلان والتصميم والطباعة.</p>
+                    <p class="text-gray-600 mb-6 text-lg leading-relaxed">نؤمن في "إبداع" بأن الإبداع ليس موهبة فحسب، بل هو عملية مستمرة من التعلم والتطوير. لذلك نستثمر باستمرار في تطوير فريقنا وتحديث تقنياتنا لضمان تقديم أفضل الحلول لعملائنا.</p>
+                    <p class="text-gray-600 text-lg leading-relaxed">رسالتنا تتمثل في تمكين الشركات والأفراد من التعبير عن هويتهم وقيمهم عبر تصميمات إبداعية تلهم الجمهور وتحقق الأهداف المرجوة.</p>
+                    
+                    <div class="mt-8 grid grid-cols-2 gap-6">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-blue-600 mb-2">8+</div>
+                            <p class="text-gray-600">سنوات من الخبرة</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-blue-600 mb-2">500+</div>
+                            <p class="text-gray-600">مشروع مكتمل</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-blue-600 mb-2">150+</div>
+                            <p class="text-gray-600">عميل راضٍ</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-blue-600 mb-2">15+</div>
+                            <p class="text-gray-600">فريق مبدع</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/2">
+                    <div class="relative">
+                        <div class="bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl p-8 text-white relative overflow-hidden">
+                            <div class="absolute -top-10 -right-10 w-40 h-40 bg-white bg-opacity-10 rounded-full"></div>
+                            <div class="absolute -bottom-10 -left-10 w-60 h-60 bg-white bg-opacity-5 rounded-full"></div>
+                            
+                            <div class="relative z-10">
+                                <h3 class="text-2xl font-bold mb-6">رؤيتنا</h3>
+                                <p class="mb-6 text-blue-100 text-lg">أن نكون الشريك الإبداعي الأول للشركات والمؤسسات في الوطن العربي، من خلال تقديم حلول تصميمية وإعلانية مبتكرة تساهم في تحقيق أهدافهم وتميزهم في السوق.</p>
+                                
+                                <h3 class="text-2xl font-bold mb-6">رسالتنا</h3>
+                                <p class="text-blue-100 text-lg">تمكين العملاء من التعبير عن هويتهم وقيمهم من خلال تصميمات إبداعية تلهم الجمهور وتحقق النتائج المرجوة، مع الالتزام بأعلى معايير الجودة والاحترافية.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="absolute -bottom-6 -right-6 bg-yellow-400 text-gray-800 p-4 rounded-xl shadow-lg floating">
+                            <p class="font-bold">نحو الإبداع الدائم</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم رحلتنا -->
+    <section class="py-20 bg-gradient-to-br from-blue-50 to-indigo-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">رحلة <span class="text-blue-600">إبداع</span></h2>
+                <p class="text-gray-600 max-w-2xl mx-auto text-lg">مسيرة من التميز والإبداع عبر السنوات</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="relative">
+                    <!-- الخط الزمني -->
+                    <div class="absolute right-1/2 transform translate-x-1/2 md:right-0 md:translate-x-0 h-full w-1 bg-blue-200"></div>
+                    
+                    <!-- العناصر الزمنية -->
+                    <div class="flex flex-col md:flex-row mb-8 relative">
+                        <div class="md:w-1/2 mb-4 md:mb-0 md:pr-8 text-left stagger-item" style="animation-delay: 0.1s;">
+                            <div class="bg-white p-6 rounded-2xl shadow-md hover-lift">
+                                <div class="flex items-center mb-4">
+                                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mr-4">
+                                        <i class="fas fa-rocket"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xl font-bold text-gray-800">تأسيس إبداع</h3>
+                                        <p class="text-blue-600">2015</p>
+                                    </div>
+                                </div>
+                                <p class="text-gray-600">بداية رحلتنا بمشروع صغير يهدف إلى تقديم حلول إبداعية بجودة عالية، مع التركيز على التصميم الجرافيكي والهويات البصرية.</p>
+                            </div>
+                        </div>
+                        <div class="md:w-1/2"></div>
+                    </div>
+                    
+                    <div class="flex flex-col md:flex-row mb-8 relative">
+                        <div class="md:w-1/2"></div>
+                        <div class="md:w-1/2 mb-4 md:mb-0 md:pr-8 text-left stagger-item" style="animation-delay: 0.2s;">
+                            <div class="bg-white p-6 rounded-2xl shadow-md hover-lift">
+                                <div class="flex items-center mb-4">
+                                    <div class="w-12 h-12 bg-green-100 text-green-600 rounded-full flex items-center justify-center mr-4">
+                                        <i class="fas fa-expand"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xl font-bold text-gray-800">توسعة الخدمات</h3>
+                                        <p class="text-blue-600">2017</p>
+                                    </div>
+                                </div>
+                                <p class="text-gray-600">إضافة خدمات الطباعة الاحترافية والتغليف لتقديم حلول متكاملة، والانتقال إلى مقر أكبر لاستيعاب النمو المتزايد.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex flex-col md:flex-row mb-8 relative">
+                        <div class="md:w-1/2 mb-4 md:mb-0 md:pr-8 text-left stagger-item" style="animation-delay: 0.3s;">
+                            <div class="bg-white p-6 rounded-2xl shadow-md hover-lift">
+                                <div class="flex items-center mb-4">
+                                    <div class="w-12 h-12 bg-purple-100 text-purple-600 rounded-full flex items-center justify-center mr-4">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xl font-bold text-gray-800">الانتشار المحلي</h3>
+                                        <p class="text-blue-600">2019</p>
+                                    </div>
+                                </div>
+                                <p class="text-gray-600">توسعة نطاق العمل ليشمل أكثر من 100 عميل في مختلف أنحاء المملكة، وإنشاء شبكة شراكات مع مزودي الخدمات الإعلانية.</p>
+                            </div>
+                        </div>
+                        <div class="md:w-1/2"></div>
+                    </div>
+                    
+                    <div class="flex flex-col md:flex-row mb-8 relative">
+                        <div class="md:w-1/2"></div>
+                        <div class="md:w-1/2 mb-4 md:mb-0 md:pr-8 text-left stagger-item" style="animation-delay: 0.4s;">
+                            <div class="bg-white p-6 rounded-2xl shadow-md hover-lift">
+                                <div class="flex items-center mb-4">
+                                    <div class="w-12 h-12 bg-yellow-100 text-yellow-600 rounded-full flex items-center justify-center mr-4">
+                                        <i class="fas fa-award"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xl font-bold text-gray-800">التميز والجودة</h3>
+                                        <p class="text-blue-600">2021</p>
+                                    </div>
+                                </div>
+                                <p class="text-gray-600">الحصول على جائزة التميز في التصميم والإبداع على مستوى المنطقة، وتطبيق نظام إدارة الجودة الشاملة في جميع العمليات.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex flex-col md:flex-row relative">
+                        <div class="md:w-1/2 mb-4 md:mb-0 md:pr-8 text-left stagger-item" style="animation-delay: 0.5s;">
+                            <div class="bg-white p-6 rounded-2xl shadow-md hover-lift">
+                                <div class="flex items-center mb-4">
+                                    <div class="w-12 h-12 bg-red-100 text-red-600 rounded-full flex items-center justify-center mr-4">
+                                        <i class="fas fa-flag"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xl font-bold text-gray-800">الريادة والابتكار</h3>
+                                        <p class="text-blue-600">2023</p>
+                                    </div>
+                                </div>
+                                <p class="text-gray-600">الوصول إلى أكثر من 500 مشروع ناجح ومواصلة الابتكار في الحلول الإبداعية، وإطلاق منصة المتجر الإلكتروني لخدمة العملاء على نطاق أوسع.</p>
+                            </div>
+                        </div>
+                        <div class="md:w-1/2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم فريقنا -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">فريق <span class="text-blue-600">إبداع</span></h2>
+                <p class="text-gray-600 max-w-2xl mx-auto text-lg">تعرف على المبدعين الذين يصنعون الفارق</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- عضو الفريق 1 -->
+                <div class="bg-gray-50 rounded-2xl p-8 text-center hover-lift stagger-item" style="animation-delay: 0.1s;">
+                    <div class="w-32 h-32 bg-gradient-to-r from-blue-400 to-blue-600 rounded-full mx-auto mb-4 flex items-center justify-center text-white text-4xl font-bold">س</div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">سارة أحمد</h3>
+                    <p class="text-blue-600 mb-4">مديرة التصميم</p>
+                    <p class="text-gray-600 mb-6">خبيرة في التصميم الجرافيكي والهويات البصرية مع أكثر من 10 سنوات خبرة في مجال التصميم والإبداع.</p>
+                    <div class="flex justify-center space-x-3 space-x-reverse">
+                        <a href="#" class="w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center hover:bg-blue-600 hover:text-white transition duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center hover:bg-blue-600 hover:text-white transition duration-300">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center hover:bg-blue-600 hover:text-white transition duration-300">
+                            <i class="fab fa-behance"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- عضو الفريق 2 -->
+                <div class="bg-gray-50 rounded-2xl p-8 text-center hover-lift stagger-item" style="animation-delay: 0.2s;">
+                    <div class="w-32 h-32 bg-gradient-to-r from-green-400 to-green-600 rounded-full mx-auto mb-4 flex items-center justify-center text-white text-4xl font-bold">م</div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">محمد الخالد</h3>
+                    <p class="text-blue-600 mb-4">مدير الإبداع</p>
+                    <p class="text-gray-600 mb-6">مختص في استراتيجيات الإعلان والتسويق وحملات العلامات التجارية، مع خبرة واسعة في إدارة المشاريع الإبداعية.</p>
+                    <div class="flex justify-center space-x-3 space-x-reverse">
+                        <a href="#" class="w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center hover:bg-blue-600 hover:text-white transition duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center hover:bg-blue-600 hover:text-white transition duration-300">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center hover:bg-blue-600 hover:text-white transition duration-300">
+                            <i class="fab fa-dribbble"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- عضو الفريق 3 -->
+                <div class="bg-gray-50 rounded-2xl p-8 text-center hover-lift stagger-item" style="animation-delay: 0.3s;">
+                    <div class="w-32 h-32 bg-gradient-to-r from-purple-400 to-purple-600 rounded-full mx-auto mb-4 flex items-center justify-center text-white text-4xl font-bold">ف</div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">فاطمة العلي</h3>
+                    <p class="text-blue-600 mb-4">مديرة الطباعة والإنتاج</p>
+                    <p class="text-gray-600 mb-6">خبيرة في تقنيات الطباعة الحديثة ومراقبة الجودة ومواد التغليف، تضمن تقديم منتجات مطبوعة بجودة استثنائية.</p>
+                    <div class="flex justify-center space-x-3 space-x-reverse">
+                        <a href="#" class="w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center hover:bg-blue-600 hover:text-white transition duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center hover:bg-blue-600 hover:text-white transition duration-300">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center hover:bg-blue-600 hover:text-white transition duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم قيمنا -->
+    <section class="py-20 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">قيمنا <span class="text-yellow-300">الأساسية</span></h2>
+                <p class="text-blue-100 max-w-2xl mx-auto text-lg">المبادئ التي توجه عملنا وتحدد هويتنا</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center stagger-item" style="animation-delay: 0.1s;">
+                    <div class="w-20 h-20 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-lightbulb text-3xl text-yellow-300"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">الإبداع</h3>
+                    <p class="text-blue-100">نؤمن بأن الإبداع هو جوهر عملنا، ونسعى دائمًا لتقديم حلول مبتكرة تناسب احتياجات عملائنا وتفوق توقعاتهم.</p>
+                </div>
+                
+                <div class="text-center stagger-item" style="animation-delay: 0.2s;">
+                    <div class="w-20 h-20 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-medal text-3xl text-yellow-300"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">الجودة</h3>
+                    <p class="text-blue-100">نلتزم بأعلى معايير الجودة في كل ما نقدمه، من التصميم إلى الطباعة، لضمان رضا عملائنا وتميزهم في سوقهم.</p>
+                </div>
+                
+                <div class="text-center stagger-item" style="animation-delay: 0.3s;">
+                    <div class="w-20 h-20 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-handshake text-3xl text-yellow-300"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">الشراكة</h3>
+                    <p class="text-blue-100">نعتبر عملائنا شركاء في النجاح، ونسعى لبناء علاقات طويلة الأمد تقوم على الثقة المتبادلة والشفافية.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم اتصل بنا -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold text-gray-800 mb-6">هل تريد الانضمام إلى رحلتنا؟</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto text-gray-600">نحن دائمًا نبحث عن المواهب المبدعة للانضمام إلى فريقنا</p>
+            <a href="contact.html" class="bg-blue-600 text-white hover:bg-blue-700 px-8 py-4 rounded-xl font-bold transition duration-300 shadow-lg hover:shadow-xl inline-flex items-center">
+                تواصل معنا للانضمام <i class="fas fa-arrow-left mr-2"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center text-white font-bold text-xl">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <span class="text-2xl font-bold mr-2">إبداع</span>
+                    </div>
+                    <p class="text-gray-400">شريكك الإبداعي في عالم الدعاية والإعلان والتصاميم والطباعة والجرافيك</p>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">روابط سريعة</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition duration-300">الرئيسية</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition duration-300">من نحن</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition duration-300">خدماتنا</a></li>
+                        <li><a href="portfolio.html" class="text-gray-400 hover:text-white transition duration-300">معرض الأعمال</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">خدماتنا</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">الدعاية والإعلان</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">التصاميم الإبداعية</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">الطباعة الاحترافية</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">الحلول الجرافيكية</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">تابعنا</h3>
+                    <div class="flex space-x-4 space-x-reverse">
+                        <a href="#" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-blue-600 transition duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-blue-600 transition duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-blue-600 transition duration-300">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-blue-600 transition duration-300">
+                            <i class="fab fa-behance"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>جميع الحقوق محفوظة &copy; إبداع 2023</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المدونة - إبداع | للإعلان والتصاميم والطباعة</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gray-50">
+    <!-- شريط التنقل -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50 slide-in">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <!-- الشعار -->
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center">
+                        <div class="w-12 h-12 bg-gradient-to-r from-blue-500 to-blue-600 rounded-xl flex items-center justify-center text-white font-bold text-xl shadow-lg pulse-glow">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <span class="text-2xl font-bold text-gray-800 mr-3">إبداع</span>
+                    </a>
+                </div>
+                
+                <!-- روابط التنقل -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="nav-link text-gray-600 hover:text-blue-600 transition duration-300">الرئيسية</a>
+                    <a href="about.html" class="nav-link text-gray-600 hover:text-blue-600 transition duration-300">من نحن</a>
+                    <a href="services.html" class="nav-link text-gray-600 hover:text-blue-600 transition duration-300">خدماتنا</a>
+                    <a href="portfolio.html" class="nav-link text-gray-600 hover:text-blue-600 transition duration-300">معرض الأعمال</a>
+                    <a href="shop.html" class="nav-link text-gray-600 hover:text-blue-600 transition duration-300">المتجر</a>
+                    <a href="blog.html" class="nav-link text-blue-600 font-semibold">المدونة</a>
+                    <a href="contact.html" class="nav-link text-gray-600 hover:text-blue-600 transition duration-300">اتصل بنا</a>
+                </div>
+                
+                <!-- أزرار إضافية -->
+                <div class="flex items-center space-x-4 space-x-reverse">
+                    <button class="bg-blue-500 text-white hover:bg-blue-600 px-5 py-2 rounded-lg font-semibold transition duration-300 shadow-md hover:shadow-lg">
+                        طلب تصميم <i class="fas fa-arrow-left mr-2"></i>
+                    </button>
+                    
+                    <!-- زر القائمة المتنقلة -->
+                    <button class="md:hidden text-gray-600 focus:outline-none mobile-menu-button">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- القائمة المتنقلة -->
+        <div class="hidden mobile-menu md:hidden bg-white py-4 border-t">
+            <div class="flex flex-col space-y-4 px-4">
+                <a href="index.html" class="text-gray-600 hover:text-blue-600 py-2 border-b border-gray-100 transition duration-300">الرئيسية</a>
+                <a href="about.html" class="text-gray-600 hover:text-blue-600 py-2 border-b border-gray-100 transition duration-300">من نحن</a>
+                <a href="services.html" class="text-gray-600 hover:text-blue-600 py-2 border-b border-gray-100 transition duration-300">خدماتنا</a>
+                <a href="portfolio.html" class="text-gray-600 hover:text-blue-600 py-2 border-b border-gray-100 transition duration-300">معرض الأعمال</a>
+                <a href="shop.html" class="text-gray-600 hover:text-blue-600 py-2 border-b border-gray-100 transition duration-300">المتجر</a>
+                <a href="blog.html" class="text-blue-600 font-semibold py-2 border-b border-gray-100">المدونة</a>
+                <a href="contact.html" class="text-gray-600 hover:text-blue-600 py-2 transition duration-300">اتصل بنا</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- قسم الهيرو -->
+    <section class="hero-gradient text-white py-20 md:py-28">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">مدونة إبداع</h1>
+            <p class="text-xl max-w-3xl mx-auto text-blue-100">استكشف أحدث المقالات والنصائح في عالم الدعاية والإعلان والتصميم والطباعة</p>
+        </div>
+    </section>
+
+    <!-- قسم المقالات -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- المقال الرئيسي -->
+                <div class="lg:col-span-2">
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover-lift">
+                        <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="اتجاهات التصميم" class="w-full h-64 object-cover">
+                        <div class="p-8">
+                            <div class="flex items-center text-gray-500 mb-4">
+                                <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm">تصميم جرافيك</span>
+                                <span class="mx-4">•</span>
+                                <span>15 أكتوبر 2023</span>
+                                <span class="mx-4">•</span>
+                                <span>8 دقائق قراءة</span>
+                            </div>
+                            <h2 class="text-3xl font-bold text-gray-800 mb-4">أهم اتجاهات التصميم الجرافيكي في 2023</h2>
+                            <p class="text-gray-600 mb-6 text-lg leading-relaxed">استكشف أحدث اتجاهات التصميم الجرافيكي التي ستسيطر على المشهد الإبداعي هذا العام. من التصميمات ثلاثية الأبعاد إلى العودة إلى الأنماط اليدوية، تعرف على ما يجب أن تضعه في اعتبارك لمشاريعك القادمة.</p>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center">
+                                    <div class="w-10 h-10 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center font-bold text-xl mr-3">أ</div>
+                                    <span class="text-gray-700">أحمد محمد</span>
+                                </div>
+                                <a href="#" class="text-blue-600 font-bold hover:text-blue-800 transition duration-300 flex items-center">
+                                    اقرأ المزيد <i class="fas fa-arrow-left mr-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- المقالات الجانبية -->
+                <div class="space-y-8">
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover-lift stagger-item" style="animation-delay: 0.1s;">
+                        <img src="https://images.unsplash.com/photo-1545235617-9465d2a55698?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1480&q=80" alt="نصائح التسويق" class="w-full h-40 object-cover">
+                        <div class="p-6">
+                            <div class="flex items-center text-gray-500 mb-2">
+                                <span class="bg-green-100 text-green-600 px-2 py-1 rounded-full text-xs">تسويق</span>
+                                <span class="mx-2">•</span>
+                                <span class="text-sm">10 أكتوبر 2023</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-3">5 استراتيجيات تسويقية فعالة لميزانية محدودة</h3>
+                            <a href="#" class="text-blue-600 font-bold hover:text-blue-800 transition duration-300 text-sm flex items-center">
+                                اقرأ المزيد <i class="fas fa-arrow-left mr-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover-lift stagger-item" style="animation-delay: 0.2s;">
+                        <img src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="الطباعة الاحترافية" class="w-full h-40 object-cover">
+                        <div class="p-6">
+                            <div class="flex items-center text-gray-500 mb-2">
+                                <span class="bg-yellow-100 text-yellow-600 px-2 py-1 rounded-full text-xs">طباعة</span>
+                                <span class="mx-2">•</span>
+                                <span class="text-sm">5 أكتوبر 2023</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-3">دليل اختيار الورق المناسب لمشاريعك المطبوعة</h3>
+                            <a href="#" class="text-blue-600 font-bold hover:text-blue-800 transition duration-300 text-sm flex items-center">
+                                اقرأ المزيد <i class="fas fa-arrow-left mr-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover-lift stagger-item" style="animation-delay: 0.3s;">
+                        <img src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1528&q=80" alt="تصميم المواقع" class="w-full h-40 object-cover">
+                        <div class="p-6">
+                            <div class="flex items-center text-gray-500 mb-2">
+                                <span class="bg-purple-100 text-purple-600 px-2 py-1 rounded-full text-xs">ويب</span>
+                                <span class="mx-2">•</span>
+                                <span class="text-sm">28 سبتمبر 2023</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-3">أساسيات تجربة المستخدم في تصميم المواقع الإلكترونية</h3>
+                            <a href="#" class="text-blue-600 font-bold hover:text-blue-800 transition duration-300 text-sm flex items-center">
+                                اقرأ المزيد <i class="fas fa-arrow-left mr-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم المزيد من المقالات -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">المزيد من <span class="text-blue-600">المقالات</span></h2>
+                <p class="text-gray-600 max-w-2xl mx-auto text-lg">استكشف مكتبتنا الشاملة من المقالات والنصائح في مختلف المجالات</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- مقال 1 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover-lift stagger-item" style="animation-delay: 0.1s;">
+                    <img src="https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="سوشيال ميديا" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center text-gray-500 mb-3">
+                            <span class="bg-blue-100 text-blue-600 px-2 py-1 rounded-full text-xs">سوشيال ميديا</span>
+                            <span class="mx-2">•</span>
+                            <span class="text-sm">20 سبتمبر 2023</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">كيف تنشئ محتوى جذاب لوسائل التواصل الاجتماعي</h3>
+                        <p class="text-gray-600 mb-4">نصائح عملية لإنشاء محتوى مميز يجذب المتابعين ويزيد التفاعل على منصات التواصل الاجتماعي.</p>
+                        <a href="#" class="text-blue-600 font-bold hover:text-blue-800 transition duration-300 text-sm flex items-center">
+                            اقرأ المزيد <i class="fas fa-arrow-left mr-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- مقال 2 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover-lift stagger-item" style="animation-delay: 0.2s;">
+                    <img src="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="الهوية البصرية" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center text-gray-500 mb-3">
+                            <span class="bg-green-100 text-green-600 px-2 py-1 rounded-full text-xs">هوية بصرية</span>
+                            <span class="mx-2">•</span>
+                            <span class="text-sm">15 سبتمبر 2023</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">أهمية الهوية البصرية في بناء العلامة التجارية</h3>
+                        <p class="text-gray-600 mb-4">كيف يمكن للهوية البصرية المتماسكة أن تعزز من قيمة علامتك التجارية وتجعلها لا تنسى.</p>
+                        <a href="#" class="text-blue-600 font-bold hover:text-blue-800 transition duration-300 text-sm flex items-center">
+                            اقرأ المزيد <i class="fas fa-arrow-left mr-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- مقال 3 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover-lift stagger-item" style="animation-delay: 0.3s;">
+                    <img src="https://images.unsplash.com/photo-1611605698335-8b1569810432?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="التغليف" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center text-gray-500 mb-3">
+                            <span class="bg-yellow-100 text-yellow-600 px-2 py-1 rounded-full text-xs">تغليف</span>
+                            <span class="mx-2">•</span>
+                            <span class="text-sm">10 سبتمبر 2023</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">فن تصميم التغليف: كيف تجعل منتجك لا يقاوم</h3>
+                        <p class="text-gray-600 mb-4">استراتيجيات تصميم التغليف التي تجذب العملاء وتزيد من مبيعات المنتجات.</p>
+                        <a href="#" class="text-blue-600 font-bold hover:text-blue-800 transition duration-300 text-sm flex items-center">
+                            اقرأ المزيد <i class="fas fa-arrow-left mr-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- مقال 4 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover-lift stagger-item" style="animation-delay: 0.4s;">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="إنفوجرافيك" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center text-gray-500 mb-3">
+                            <span class="bg-purple-100 text-purple-600 px-2 py-1 rounded-full text-xs">إنفوجرافيك</span>
+                            <span class="mx-2">•</span>
+                            <span class="text-sm">5 سبتمبر 2023</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">دليل تصميم الإنفوجرافيك المؤثر</h3>
+                        <p class="text-gray-600 mb-4">كيفية تحويل البيانات المعقدة إلى رسوم بيانية جذابة وسهلة الفهم.</p>
+                        <a href="#" class="text-blue-600 font-bold hover:text-blue-800 transition duration-300 text-sm flex items-center">
+                            اقرأ المزيد <i class="fas fa-arrow-left mr-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- مقال 5 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover-lift stagger-item" style="animation-delay: 0.5s;">
+                    <img src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1528&q=80" alt="تصميم المواقع" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center text-gray-500 mb-3">
+                            <span class="bg-indigo-100 text-indigo-600 px-2 py-1 rounded-full text-xs">تصميم مواقع</span>
+                            <span class="mx-2">•</span>
+                            <span class="text-sm">1 سبتمبر 2023</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">أساسيات تصميم المواقع المتجاوبة</h3>
+                        <p class="text-gray-600 mb-4">كيف تضمن أن موقعك الإلكتروني يظهر بشكل مثالي على جميع الأجهزة.</p>
+                        <a href="#" class="text-blue-600 font-bold hover:text-blue-800 transition duration-300 text-sm flex items-center">
+                            اقرأ المزيد <i class="fas fa-arrow-left mr-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- مقال 6 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover-lift stagger-item" style="animation-delay: 0.6s;">
+                    <img src="https://images.unsplash.com/photo-1545235617-9465d2a55698?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1480&q=80" alt="تسويق" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center text-gray-500 mb-3">
+                            <span class="bg-red-100 text-red-600 px-2 py-1 rounded-full text-xs">تسويق</span>
+                            <span class="mx-2">•</span>
+                            <span class="text-sm">28 أغسطس 2023</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">استراتيجيات التسويق بالمحتوى الناجحة</h3>
+                        <p class="text-gray-600 mb-4">كيفية إنشاء محتوى قيم يجذب العملاء المحتملين ويحولهم إلى عملاء دائمين.</p>
+                        <a href="#" class="text-blue-600 font-bold hover:text-blue-800 transition duration-300 text-sm flex items-center">
+                            اقرأ المزيد <i class="fas fa-arrow-left mr-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <button class="bg-blue-600 text-white hover:bg-blue-700 px-8 py-3 rounded-xl font-bold transition duration-300 shadow-lg hover:shadow-xl inline-flex items-center">
+                    عرض المزيد من المقالات <i class="fas fa-arrow-left mr-2"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم النشرة البريدية -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto bg-gradient-to-r from-blue-500 to-blue-700 rounded-2xl p-8 text-center text-white">
+                <h2 class="text-3xl font-bold mb-4">اشترك في نشرتنا البريدية</h2>
+                <p class="mb-6 text-blue-100">احصل على أحدث المقالات والنصائح في عالم التصميم والإعلان مباشرة في بريدك الإلكتروني</p>
+                <div class="flex flex-col md:flex-row gap-4 max-w-md mx-auto">
+                    <input type="email" placeholder="بريدك الإلكتروني" class="flex-grow px-4 py-3 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-300">
+                    <button class="bg-white text-blue-600 hover:bg-gray-100 px-6 py-3 rounded-lg font-bold transition duration-300">اشترك الآن</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center text-white font-bold text-xl">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <span class="text-2xl font-bold mr-2">إبداع</span>
+                    </div>
+                    <p class="text-gray-400">شريكك الإبداعي في عالم الدعاية والإعلان والتصاميم والطباعة والجرافيك</p>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">روابط سريعة</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition duration-300">الرئيسية</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition duration-300">من نحن</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition duration-300">خدماتنا</a></li>
+                        <li><a href="portfolio.html" class="text-gray-400 hover:text-white transition duration-300">معرض الأعمال</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">خدماتنا</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">الدعاية والإعلان</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">التصاميم الإبداعية</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">الطباعة الاحترافية</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">الحلول الجرافيكية</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">تابعنا</h3>
+                    <div class="flex space-x-4 space-x-reverse">
+                        <a href="#" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-blue-600 transition duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-blue-600 transition duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-blue-600 transition duration-300">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-blue-600 transition duration-300">
+                            <i class="fab fa-behance"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>جميع الحقوق محفوظة &copy; إبداع 2023</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
